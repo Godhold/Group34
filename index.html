@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Prediction</title>
+</head>
+<body>
+    <h1>Machine Learning Model Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required><br><br>
+
+        <label for="value_eur">Value (in EUR):</label>
+        <input type="text" id="value_eur" name="value_eur" required><br><br>
+
+        <!-- Add more input fields here for other features -->
+
+        <input type="submit" value="Predict">
+    </form>
+    <p>Result: <span id="result">{{ prediction }}</span></p>
+</body>
+</html>
